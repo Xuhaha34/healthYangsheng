@@ -1,0 +1,161 @@
+/* 全局公共样式 - 国风简约统一主题 */
+
+/* 主色调变量 */
+page {
+    --primary: #8C4A31;
+    --primary-light: #A8684F;
+    --bg: #F6EBE0;
+    --bg-card: #FFF9F2;
+    --text-main: #2E2016;
+    --text-sub: #886F5C;
+    --border: #E8D8C8;
+    --success: #6B8E4E;
+    --warn: #C88B4A;
+}
+
+/* 通用容器 */
+.container {
+    padding: 20rpx;
+    background-color: #F6EBE0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 卡片样式 */
+.card {
+    background-color: #FFF9F2;
+    border-radius: 20rpx;
+    padding: 30rpx;
+    margin-bottom: 24rpx;
+    box-shadow: 0 4rpx 16rpx rgba(140, 74, 49, 0.12);
+}
+
+/* 标题样式 */
+.title-main {
+    font-size: 36rpx;
+    font-weight: bold;
+    color: #2E2016;
+    margin-bottom: 16rpx;
+}
+
+.title-sub {
+    font-size: 28rpx;
+    color: #886F5C;
+    margin-bottom: 12rpx;
+}
+
+.section-title {
+    font-size: 32rpx;
+    color: #8C4A31;
+    font-weight: bold;
+    padding: 20rpx 0;
+    display: flex;
+    align-items: center;
+}
+
+.section-title::before {
+    content: '';
+    width: 8rpx;
+    height: 32rpx;
+    background-color: #8C4A31;
+    margin-right: 16rpx;
+    border-radius: 4rpx;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    background-color: #8C4A31;
+    color: #F6EBE0;
+    border-radius: 50rpx;
+    padding: 20rpx 40rpx;
+    font-size: 28rpx;
+    text-align: center;
+    border: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #8C4A31;
+    border: 2rpx solid #8C4A31;
+    border-radius: 50rpx;
+    padding: 18rpx 40rpx;
+    font-size: 28rpx;
+    text-align: center;
+}
+
+.btn-tag {
+    display: inline-block;
+    background-color: #F6EBE0;
+    color: #8C4A31;
+    padding: 8rpx 20rpx;
+    border-radius: 30rpx;
+    font-size: 24rpx;
+    margin-right: 12rpx;
+}
+
+/* 列表项 */
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 24rpx 0;
+    border-bottom: 2rpx solid #E8D8C8;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+/* 文字 */
+.text-small {
+    font-size: 24rpx;
+    color: #886F5C;
+}
+
+.text-medium {
+    font-size: 28rpx;
+    color: #2E2016;
+}
+
+/* flex布局辅助类 */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+/* 分割线 */
+.divider {
+    height: 2rpx;
+    background-color: #E8D8C8;
+    margin: 20rpx 0;
+}
+
+/* 空状态 */
+.empty {
+    padding: 100rpx 0;
+    text-align: center;
+    color: #886F5C;
+    font-size: 28rpx;
+}
+
+.empty-icon {
+    font-size: 120rpx;
+    margin-bottom: 20rpx;
+}
