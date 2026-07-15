@@ -35,7 +35,7 @@ healthYangsheng/
 │   ├── selfTest/selfTest.vue
 │   ├── setting/setting.vue
 │   ├── detail/detail.vue
-│   └── mine/mine.vue       # 新增：我的页面
+│   └── mine/mine.vue       # 我的页面
 ├── data/                   # 模拟数据
 │   ├── recipes.js          # 食谱数据
 │   ├── ingredients.js      # 食材数据
@@ -65,7 +65,7 @@ healthYangsheng/
 7. **节气提示**：根据当前日期自动显示节气养生建议
 8. **设置中心**：字体大小调节、数据统计、清除收藏
 
-### 🌟 新增功能：我的页面 & AI养生顾问
+### 我的页面 & AI养生顾问
 
 **个人中心（mine）**
 - 用户信息展示，含体质测试结果徽章
