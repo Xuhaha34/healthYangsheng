@@ -194,12 +194,11 @@ export default {
             isLoading: false,
             // ============================================
             // 大模型接入配置
+            // 1: 直接接入开放大模型API（如OpenAI、通义千问、文心一言、智谱、DeepSeek等）
+            // 2: 自建后端代理，通过uni.request调用
             // 
-            // 方法1: 直接接入开放大模型API（如OpenAI、通义千问、文心一言、智谱、DeepSeek等）
-            // 方法2: 自建后端代理，通过uni.request调用
-            // 
-            // useAIModel: true  => 使用真实大模型
-            // useAIModel: false => 使用本地规则匹配（离线演示用）
+            // useAIModel: true  => 
+            // useAIModel: false =>
             // ============================================
             useAIModel: false,
             aiConfig: {
@@ -303,14 +302,12 @@ export default {
             }
         },
         // ============================================
-        // 方法：调用真实大模型 API
+        //调用真实大模型 API
         // 
-        // 你需要在后端搭建一个代理服务，将小程序的请求转发给大模型API。
-        // 原因：
-        // 1. 小程序不建议在前端直接存放API Key（不安全）
-        // 2. 大模型API通常有跨域限制，需要服务端代理
+        // 在后端搭建一个代理服务，将小程序的请求转发给大模型API。
+        
         //
-        // 后端示例（Node.js + Express）：
+        // 后端（Node.js + Express）：
         // 
         // const express = require('express');
         // const cors = require('cors');
